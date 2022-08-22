@@ -1,0 +1,31 @@
+<div>
+<h1>Hello World</h1>
+
+{% assign newVar="New Variable " %}
+{% assign color="green" %}
+{{newVar}}
+{%comment%}
+Commenting
+{% endcomment %}
+
+  {% assign num1=50 %}
+  {% assign num2=100 %}
+  {{ num1 |divided_by: num2 }}
+  {{ num1 |plus: num2 }}
+  {{ num1 |minus: num2 }}
+  {{ num1 |times: num2 }}
+
+  {% if num2 > num1 %}
+  Greater number is {{ num2 }}
+    {% else %}}
+  Greater number is {{ num1 }}
+  
+  {% endif  %}
+
+  {% case color %}
+  {% when "red" %}
+  Color is {{ color }}
+  {% when "green" %}}
+  Color is {{ color }}
+  {% endcase %}
+</div>
